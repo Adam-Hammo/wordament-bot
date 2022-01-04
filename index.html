@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wordament solver</title>
+    <meta name="description" content="Description Goes Here">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="dictionary.js"></script>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div style="display:flex; flex-direction:column; align-items: center; font-family: arial;">
+        Digrams: just type them in (eg "MP")<br/>
+        Prefixes: append a "-" (eg "PRE-")<br/>
+        Suffixes: prepend a "-" (eg "-ED")<br/>
+        Either/or: include a "/" (eg "R/D")<br/><br/>
+        <div style="display: flex">
+            <div style="display: flex">
+                <div>
+                    <input class="grid-input" type="text" key="1,1"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="1,2"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="1,3"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="1,4"/>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex">
+            <div style="display: flex">
+                <div>
+                    <input class="grid-input" type="text" key="2,1"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="2,2"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="2,3"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="2,4"/>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex">
+            <div style="display: flex">
+                <div>
+                    <input class="grid-input" type="text" key="3,1"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="3,2"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="3,3"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="3,4"/>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex">
+            <div style="display: flex">
+                <div>
+                    <input class="grid-input" type="text" key="4,1"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="4,2"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="4,3"/>
+                </div>
+                <div>
+                    <input class="grid-input" type="text" key="4,4"/>
+                </div>
+            </div>
+        </div>
+        <div id="error" style="color:red">
+
+        </div>
+        <div style="display: flex; padding-top:20px">
+            <button id="search">SEARCH</button>
+            <div style="width:10vw">&nbsp;</div>
+            <button id="reset">RESET</button>
+        </div>
+        <ul id="results">
+
+        </ul>
+    </div>
+</body>
+
+</html>
