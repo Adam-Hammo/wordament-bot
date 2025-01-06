@@ -46,7 +46,7 @@ function recursiveSearch(dict, substr, x, y, visited, grid) {
         words.push(substr)
 
     // Find neighbours
-    let neighbours = getSquareNeigbours(x,y,4-1)
+    let neighbours = getSquareNeigbours(x,y,10-1)
     let unvisited = neighbours.filter(n => !visited.includes(JSON.stringify(n)))
 
     // Search each unvisited neighbour
@@ -80,10 +80,16 @@ function search() {
     $("#error").html("")
     $("#results").html("")
     let grid = [
-        [null,null,null,null],
-        [null,null,null,null],
-        [null,null,null,null],
-        [null,null,null,null]
+        [null,null,null,null,null,null,null,null,null,null],
+        [null,null,null,null,null,null,null,null,null,null],
+        [null,null,null,null,null,null,null,null,null,null],
+        [null,null,null,null,null,null,null,null,null,null],
+        [null,null,null,null,null,null,null,null,null,null],
+        [null,null,null,null,null,null,null,null,null,null],
+        [null,null,null,null,null,null,null,null,null,null],
+        [null,null,null,null,null,null,null,null,null,null],
+        [null,null,null,null,null,null,null,null,null,null],
+        [null,null,null,null,null,null,null,null,null,null]
     ]
     $(".grid-input").each((i,e)=>{
         e=$(e)
@@ -95,7 +101,7 @@ function search() {
         return
     }
     let words = []
-    let v = [0,1,2,3]
+    let v = [0,1,2,3,4,5,6,7,8,9]
     v.forEach(x=>
         v.forEach(y=>{
             let start = grid[x][y]
